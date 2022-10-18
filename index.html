@@ -3,10 +3,16 @@
 	<head>
 		<link rel="stylesheet" href="mystyle.css">
 		<title>The World</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	
 	<body>
-		<h1>Welcome to the World Website!</h1>
+		<div class="header">
+			<h2>Welcome to the World Website</h2>
+			<div class="progress-container">
+			  <div class="progress-bar" id="myBar"></div>
+			</div>  
+		</div>
+		<div class="content">
 		<img src="https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500	" alt="An image of the world" width="200">
 		<hr>
 		<h2>Contents</h2>
@@ -15,7 +21,6 @@
 			<li> Click <a href="#WCPDTHTW">Here</a> for what people can do to help the world.</li>
 			<li> Click <a href="#MWATW">Here</a> for some websites about the world.</li>
 			<li> Click <a href="#ALSATW">Here</a> for lyrics of a song that is about the world.</li>
-			<li> Click <a href="#Credits">Here</a> for the Credits.</li>
 		</ul>
 		<hr>
 		<h3 id="BFATW"> Basic Facts about the World!</h3>
@@ -93,5 +98,18 @@
 		Seek him in the heavens;<br>
 		Above the stars must He dwell.<br>
 		<hr>
+		<hr>
+		<p><a href="https://www.youtube.com/c/MrTechnoMoon">Subscribe to me!!(MrTechnoMoon)</a></p>
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			function myFunction() {
+  				var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  				var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  				var scrolled = (winScroll / height) * 100;
+  				document.getElementById("myBar").style.width = scrolled + "%";
+			}
+		</script>
+		</div>
 	</body>
 </html>
